@@ -1,5 +1,8 @@
 # Arctic
 
+> [!WARNING]
+> This project was entirely built with AI assistance and is provided as-is. It may contain bugs or unexpected behavior and is not guaranteed to work in all environments. Use at your own risk. 
+
 Arctic is a seekable, streamed world format and `ChunkLoader` for Minestom. It keeps one world in one `.arctic` file without requiring the complete world to be loaded or rewritten.
 
 Unlike Polar, every chunk is an independent record. Loading one chunk performs one index lookup, one positional file read, one checksum verification, and at most one bounded Zstd decompression. Saving appends only changed chunks and atomically publishes a new generation.
